@@ -7,14 +7,15 @@ const PATHS = {
 };
 
 module.exports = {
-  entry: PATHS.source + '/index.js',
+  entry: PATHS.source + '/js/main.js',
   output: {
     path: PATHS.build,
     filename: '[name].js'
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Application'
+      template: 'source/index.html',
+      chunks: ['index']
     })
   ]
 }
