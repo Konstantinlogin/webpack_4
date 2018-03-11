@@ -12,6 +12,10 @@ module.exports = {
     path: PATHS.build,
     filename: '[name].js'
   },
+  devServer: {
+    port: 9000,
+    open: true
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: 'source/index.html',
