@@ -12,6 +12,7 @@ module.exports = {
     path: PATHS.build,
     filename: '[name].js'
   },
+  devtool: 'source-map',
   devServer: {
     port: 9000,
     open: true
@@ -21,5 +22,12 @@ module.exports = {
       template: 'source/index.html',
       chunks: ['index']
     })
-  ]
+  ],
+  module: {
+    rules: [
+      {
+        //rules will be here
+      }
+    ]
+  }
 }
